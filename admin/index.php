@@ -13,6 +13,7 @@
 <link href="css/docs.css" rel="stylesheet" type="text/css">
 </head>
 <body background="img/bg.png">
+  <?php include "config/conection.php" ; ?>
 <?php //================================================ ?>
 <div id="navbar-example" class="navbar navbar-fixed-top">
     <div class="navbar-inner">
@@ -27,17 +28,10 @@
                   <ul class="nav" >
                       
                     <li class="dropdown">
-                      <a id="drop1" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-                      <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="http://google.com/">Action</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#anotherAction">Another action</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
-                        <li role="presentation" class="divider"></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
-                      </ul>
+                      <a id="drop1" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">HOME</a>
                     </li>
                     <li class="dropdown">
-                      <a href="#" id="drop2" role="button" class="dropdown-toggle" data-toggle="dropdown">Dropdown 2 <b class="caret"></b></a>
+                      <a href="#" id="drop2" role="button" class="dropdown-toggle" data-toggle="dropdown">Profil <b class="caret"></b></a>
                       <ul class="dropdown-menu" role="menu" aria-labelledby="drop2">
                         <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
                         <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
@@ -111,8 +105,8 @@
     </div>
     <div class="span3" >
       <div class="well">
-      <h4>Sidebar nav</h4>
-        fafmkam fkmaf fiamfakf fmamfk mfka fmakfmakm fkamfkmak fkmafkmakf fkamfkm
+      <h4>Statistik pengunjung</h4>
+        <?php include "statisti.php"; ?>
       </div>
     </div>
     </div>
